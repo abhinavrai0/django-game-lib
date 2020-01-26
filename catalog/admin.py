@@ -22,3 +22,4 @@ class GamerAdmin(admin.ModelAdmin):
 @admin.register(Purchases)
 class PurchasesAdmin(admin.ModelAdmin):
     list_display = ('gamer', 'game', 'date_purchased', 'price', 'review')
+    list_filter = ('gamer', 'game', 'date_purchased')
