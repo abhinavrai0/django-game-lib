@@ -8,7 +8,7 @@ def index(request):
     num_games = Game.objects.all().count()
     num_purchases = Purchases.objects.all().count()
     num_publishers = Publisher.objects.all().count()
-    num_gamers = Gamer.objects().all().count()
+    num_gamers = Gamer.objects.all().count()
     context = {
         'num_games':  num_games,
         'num_purchases': num_purchases,
